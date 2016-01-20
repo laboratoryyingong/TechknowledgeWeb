@@ -50,16 +50,16 @@
         // -------------------------------------//
 
         // HEADER FIXED WHEN SCROLL
-        if ($('.header-main').hasClass('homepage-01')) {
+        if ($('.header-main').hasClass('homepage-03')) {
             if ($(window).width() > 767) {
                 var topmenu = $(".header-topbar").height();
 
                 $(window).scroll(function () {
                     if ($(window).scrollTop() > topmenu) {
-                        $(".header-main.homepage-01").addClass('header-fixed');
+                        $(".header-main.homepage-03").addClass('header-fixed');
                     }
                     else {
-                        $(".header-main.homepage-01").removeClass('header-fixed');
+                        $(".header-main.homepage-03").removeClass('header-fixed');
                     };
                 });
             }
@@ -68,10 +68,10 @@
 
                 $(window).scroll(function () {
                     if ($(window).scrollTop() > offset) {
-                        $(".header-main.homepage-01").addClass('header-fixed');
+                        $(".header-main.homepage-03").addClass('header-fixed');
                     }
                     else {
-                        $(".header-main.homepage-01").removeClass('header-fixed');
+                        $(".header-main.homepage-03").removeClass('header-fixed');
                     }
                 });
             }
@@ -329,13 +329,13 @@
 
         // owl carousel slider logos
         $('.carousel-logos').owlCarousel({
-            margin: 115,
+            margin: 95,
             loop: true,
-            //lazyLoad: true,
+            lazyLoad: true,
             nav: false,
             autoplay:true,
             autoplayTimeout: 5000,
-            smartSpeed: 1500,
+            smartSpeed: 1000,
             responsiveClass: true,
             responsive: {
                 0: {

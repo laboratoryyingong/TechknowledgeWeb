@@ -402,7 +402,7 @@
     right: 0;
     bottom: 0;
     left: 0;
-    background-color: rgba(10, 15, 28, 0.7)
+    background-color: rgba(10, 15, 28, 0.8)
 }
 
 .background-opacity-2 {
@@ -1477,7 +1477,8 @@ header .header-main.homepage-03.header-fixed .logo {
 }
 
 header .header-main.homepage-03.header-fixed .logo .header-logo img {
-    max-width: 125px;
+    margin-top: 20px;
+    max-width: 220px;
     width: 100%;
     transition: all .3s ease-in-out
 }
@@ -3177,7 +3178,7 @@ footer {
 }
 
 .page-title {
-    background-image: url("../images/banner-1.jpg");
+    background-image: url("../images/banner.png");
     background-repeat: repeat;
     background-attachment: fixed;
     background-position: top;
