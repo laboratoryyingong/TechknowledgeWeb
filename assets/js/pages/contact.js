@@ -1,7 +1,7 @@
 (function ($) {
 
     function init() {
-        var myLatlng = new google.maps.LatLng(53.464892, -2.285771);
+        var myLatlng = new google.maps.LatLng(-34.9226792,138.589222);
         // If document (your website) is wider than 767px, isDraggable = true, else isDraggable = false
         var isDraggable = $(document).width() > 767 ? true : false;
         var myOptions = {
@@ -22,14 +22,14 @@
         var marker = new google.maps.Marker({
             position: myLatlng,
             map: map,
-            title: 'edugate',
+            title: 'Techknowledge Insitute',
             infowindow: infowindow
         });
         var contentString = '<div id="content">' +
             '<div class="text-center">' +
-            '<h1 id="firstHeading" class="firstHeading">EDUGATE</h1>' +
-            '<div class="g-address">Trafford Wharf Road, Manchester M17 1AB, United Kingdom</div>' +
-            '<div class="g-phone-num">+44 277 188 8800</div>' +
+            '<h1 id="firstHeading" class="firstHeading">Techknowledge Insitute</h1>' +
+            '<div class="g-address">{address}</div>' +
+            '<div class="g-phone-num">{input phone number}</div>' +
             '</div>' +
             '</div>';
         var infowindow = new google.maps.InfoWindow({
@@ -37,8 +37,8 @@
         });
         // infowindow.open(map, marker);
         map.setCenter({
-            lat: 53.464892,
-            lng: -2.285771
+            lat: -34.9226792,
+            lng: 138.589222
         });
 
 
