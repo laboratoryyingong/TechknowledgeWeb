@@ -80,14 +80,14 @@
                 <div class="section section-padding contact-main" id="contact">
                     <div class="container">
                         <div class="contact-main-wrapper">
-                            <form class="bg-w-form contact-form" action="MAILTO:info.tkie@gmail.com?subject=New Client Request&body=Hello, Techknowledge Institute" method="post" enctype="text/plain">
+                            <form class="bg-w-form contact-form" action="sendmail.php" method="post" enctype="text/plain">
                                 <div class="row">
                                     <div class="col-md-6">
                                         <div class="form-group">
-                                            <label class="control-label form-label">NAME <span class="highlight">*</span></label><input name="Name" type="text" placeholder="" class="form-control form-input"/></div>
+                                            <label class="control-label form-label">NAME <span class="highlight">*</span></label><input name="name" type="text" placeholder="" class="form-control form-input"/></div>
                                     </div>
                                     <div class="col-md-6">
-                                        <div class="form-group"><label class="control-label form-label">EMAIL <span class="highlight">*</span></label><input name="email" type="text" placeholder="" class="form-control form-input"/><!--label.control-label.form-label.warning-label(for="")--></div>
+                                        <div class="form-group"><label class="control-label form-label">EMAIL <span class="highlight">*</span></label><input name="email" type="text" placeholder="" class="form-control form-input"/></div>
                                     </div>
                                     <div class="col-md-6">
                                         <div class="form-group"><label class="control-label form-label">PURPOSE</label><select class="form-control form-input selectbox">
@@ -98,10 +98,10 @@
                                         </select></div>
                                     </div>
                                     <div class="col-md-6">
-                                        <div class="form-group"><label class="control-label form-label">SUBJECT</label><input name="subject" type="text" placeholder="" class="form-control form-input"/><!--label.control-label.form-label.warning-label(for="", hidden)--></div>
+                                        <div class="form-group"><label class="control-label form-label">SUBJECT</label><input name="title" type="text" placeholder="" class="form-control form-input"/></div>
                                     </div>
                                     <div class="col-md-12">
-                                        <div class="contact-question form-group"><label class="control-label form-label">HOW CAN WE HELP? <span class="highlight">*</span></label><textarea name="How can we help" class="form-control form-input"></textarea></div>
+                                        <div class="contact-question form-group"><label class="control-label form-label">HOW CAN WE HELP? <span class="highlight">*</span></label><textarea name="content" class="form-control form-input"></textarea></div>
                                     </div>
                                 </div>
                                 <div class="contact-submit">
