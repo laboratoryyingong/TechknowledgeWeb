@@ -5,6 +5,10 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+        <!--favicon icon-->
+        <link rel="shortcut icon" href="assets/images/favicon/favicon.ico" type="image/x-icon">
+        <link rel="icon" href="assets/images/favicon/favicon.ico" type="image/x-icon">
+
 <!--Lib font-->
         <link type="text/css" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,400italic,700,900,300">
         <link type="text/css" rel="stylesheet" href="assets/font/font-icon/font-awesome-4.4.0/css/font-awesome.css">
@@ -25,8 +29,7 @@
             <div class="header-topbar">
                 <div class="container">
                     <div class="topbar-right pull-right">
-                        <div class="email"><a href="#"><i class="topbar-icon fa fa-envelope-o"></i><span>info@tkie.com</span></a></div>
-                        <div class="hotline"><a href="#"><i class="topbar-icon fa fa-phone"></i><span>{input contact number}</span></a></div>
+                       <div class="email"><a onclick="window.open('mailto:info.tkie@gmail.com?subject=New client request&body=Hi, Techknowledge Institute');"><i class="topbar-icon fa fa-envelope-o"></i><span>info.tkie@gmail.com</span></a></div>
                     </div>
                     <div class="topbar-left pull-left">
                         <div class="socials">
@@ -45,11 +48,11 @@
                         </div>
                         <nav class="navigation collapse navbar-collapse pull-right">
                             <ul class="nav-links nav navbar-nav">
-                                <li><a href="" class="main-menu">Home</a></li>
-                                <li><a href="" class="main-menu">Workflow</a></li>
-                                <li><a href="" class="main-menu">Team</a></li>
-                                <li><a href="" class="main-menu">About US</a></li>
-                                <li><a href="" class="main-menu">Contact</a></li>
+                                <li><a href="index.html" class="main-menu">Home</a></li>
+                                <li><a href="index.html#workflow" class="main-menu">Workflow</a></li>
+                                <li><a href="index.html#clients" class="main-menu">Team</a></li>
+                                <li><a href="index.html#aboutus" class="main-menu">About US</a></li>
+                                <li><a href="contact.html" class="main-menu">Contact</a></li>
 
                             </ul>
                         </nav>
@@ -74,17 +77,17 @@
                     </div>
                 </div>
 <!--contact form-->
-                <div class="section section-padding contact-main">
+                <div class="section section-padding contact-main" id="contact">
                     <div class="container">
                         <div class="contact-main-wrapper">
-                            <form class="bg-w-form contact-form">
+                            <form class="bg-w-form contact-form" action="MAILTO:info.tkie@gmail.com?subject=New Client Request&body=Hello, Techknowledge Institute" method="post" enctype="text/plain">
                                 <div class="row">
                                     <div class="col-md-6">
                                         <div class="form-group">
-                                            <label class="control-label form-label">NAME <span class="highlight">*</span></label><input type="text" placeholder="" class="form-control form-input"/><!--label.control-label.form-label.warning-label(for="") Warning for the above !--></div>
+                                            <label class="control-label form-label">NAME <span class="highlight">*</span></label><input name="Name" type="text" placeholder="" class="form-control form-input"/></div>
                                     </div>
                                     <div class="col-md-6">
-                                        <div class="form-group"><label class="control-label form-label">EMAIL <span class="highlight">*</span></label><input type="text" placeholder="" class="form-control form-input"/><!--label.control-label.form-label.warning-label(for="")--></div>
+                                        <div class="form-group"><label class="control-label form-label">EMAIL <span class="highlight">*</span></label><input name="email" type="text" placeholder="" class="form-control form-input"/><!--label.control-label.form-label.warning-label(for="")--></div>
                                     </div>
                                     <div class="col-md-6">
                                         <div class="form-group"><label class="control-label form-label">PURPOSE</label><select class="form-control form-input selectbox">
@@ -92,17 +95,17 @@
                                             <option value="">Mobile app development</option>
                                             <option value="">Enterprise software solutions</option>
                                             <option value="">General IT Consultation</option>
-                                        </select><!--label.control-label.form-label.warning-label(for="", hidden)--></div>
+                                        </select></div>
                                     </div>
                                     <div class="col-md-6">
-                                        <div class="form-group"><label class="control-label form-label">SUBJECT</label><input type="text" placeholder="" class="form-control form-input"/><!--label.control-label.form-label.warning-label(for="", hidden)--></div>
+                                        <div class="form-group"><label class="control-label form-label">SUBJECT</label><input name="subject" type="text" placeholder="" class="form-control form-input"/><!--label.control-label.form-label.warning-label(for="", hidden)--></div>
                                     </div>
                                     <div class="col-md-12">
-                                        <div class="contact-question form-group"><label class="control-label form-label">HOW CAN WE HELP? <span class="highlight">*</span></label><textarea class="form-control form-input"></textarea></div>
+                                        <div class="contact-question form-group"><label class="control-label form-label">HOW CAN WE HELP? <span class="highlight">*</span></label><textarea name="How can we help" class="form-control form-input"></textarea></div>
                                     </div>
                                 </div>
                                 <div class="contact-submit">
-                                    <button type="submit" class="btn btn-contact btn-green"><span>SUBMIT CONTACT</span></button>
+                                    <button type="submit" class="btn btn-contact btn-green"><span>SUBMIT</span></button>
                                 </div>
                             </form>
                         </div>
@@ -124,7 +127,7 @@
             <div class="footer-main-wrapper">
                 <div class="row">
                     <div class="col-2">
-                        <div class="col-md-3 col-sm-6 col-xs-6 sd380">
+                        <div class="col-md-6 col-sm-12 col-xs-12 sd380">
                             <div class="edugate-widget widget">
                                 <div class="title-widget">Techknowledge insititute</div>
                                 <div class="content-widget">
@@ -132,8 +135,7 @@
 
                                     <div class="info-list">
                                         <ul class="list-unstyled">
-                                            <li><i class="fa fa-envelope-o"></i><a href="#">info@tkie.com</a></li>
-                                            <li><i class="fa fa-phone"></i><a href="#">P: {please input your phone number}</a></li>
+                                            <li><i class="fa fa-envelope-o"></i>info.tkie@gmail.com</li>
                                             <li><i class="fa fa-map-marker"></i><p>Adelaide</p>
                                             <p>South Australia</p></li>
                                         </ul>
@@ -142,20 +144,6 @@
                                 </div>
                             </div>
                         </div>
-
-                        <div class="col-md-3 col-sm-6 col-xs-6 sd380">
-                            <div class="gallery-widget widget">
-                                <div class="title-widget">Our Clients</div>
-                                <div class="content-widget">
-                                    <div class="gallery-list">
-<!--                                    <a href="#" class="thumb"><img src="assets/images/gallery/gallery-01.jpg" alt="" class="img-responsive"/></a>-->
-                                    </div>
-
-                                    <div class="clearfix"></div>
-                                </div>
-                            </div>
-                        </div>
-
                     </div>
 
                     <div class="col-2">
@@ -165,7 +153,9 @@
                                 <div class="content-widget">
                                     <p>Please tell us your contact email address, our staff will contact you soon</p>
                                     <form action="index.html">
-                                        <div class="input-group"><input type="text" placeholder="Email address" class="form-control form-email-widget"/><span class="input-group-btn"><input type="submit" value="✓" class="btn btn-email"/></span></div>
+                                        <div class="input-group">
+                                            <input type="text" placeholder="Email address" class="form-control form-email-widget"/>
+                                            <span class="input-group-btn"><input type="submit" value="✓" class="btn btn-email"/></span></div>
                                     </form>
                                     <p>Please be noticed: We respect your privacy</p>
 

@@ -1,3 +1,4 @@
+//google map
 (function($) {
     "use strict";
     $(function(){
@@ -513,3 +514,5 @@
     });
 
 })(jQuery);
+
+//post data to google doc

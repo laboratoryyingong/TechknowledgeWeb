@@ -1195,10 +1195,19 @@ header .header-topbar .email, header .header-topbar .hotline {
     display: inline-block
 }
 
+header .header-topbar .email:hover{
+    cursor: pointer;
+}
+
+
 header .header-topbar .email .topbar-icon, header .header-topbar .hotline .topbar-icon {
     color: #2aacff;
     margin-right: 10px;
     font-size: 16px
+}
+
+.topbar-icon span:hover{
+    cursor: pointer;
 }
 
 header .header-topbar .email {
@@ -4770,7 +4779,7 @@ ul.list-detail li i {
 
 .accordion .panel.active .panel-heading .panel-title a:after {
     font-family: Fontawesome;
-    content: "\f068";
+    content: "\f234";
     position: absolute;
     top: 0;
     right: 30px
@@ -4794,7 +4803,7 @@ ul.list-detail li i {
 
 .accordion .panel-heading .panel-title a:after {
     font-family: Fontawesome;
-    content: "\f067";
+    content: "\f234";
     position: absolute;
     top: 0;
     right: 30px
