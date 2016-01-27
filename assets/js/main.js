@@ -516,3 +516,21 @@
 })(jQuery);
 
 //post data to google doc
+
+$("#submitBtn").click(function(){
+    var responseToken = document.getElementById('g-recaptcha-response').value;
+
+     $.ajax({
+         url: "https://www.google.com/recaptcha/api/siteverify",
+         data: {
+           secret : '6Ld9hBYTAAAAAIIFi92Ytl2cC8lh3HqvrYwz7jE7',
+           response : responseToken},
+         success: function(result){
+                    console.log(result);
+            },
+         error: function(error){
+             console.log(error);
+         },
+     });
+
+})

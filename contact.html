@@ -23,6 +23,8 @@
         <link type="text/css" rel="stylesheet" href="assets/libs/media-element/build/mediaelementplayer.min.css">
 <!--style css-->
         <link type="text/css" rel="stylesheet" href="assets/css/color.css">
+<!--recaptcha api-->
+        <script src='https://www.google.com/recaptcha/api.js'></script>
     </head>
     <body>
         <header>
@@ -66,16 +68,6 @@
     <div id="page-wrapper"><!-- MAIN CONTENT-->
         <div class="main-content"><!-- CONTENT-->
             <div class="content">
-                <div class="section background-opacity page-title set-height-top">
-                    <div class="container">
-                        <div class="page-title-wrapper"><h2 class="captions">Innovation by design</h2>
-                            <ol class="breadcrumb">
-                                <li class="active"><a href="index.html">Home</a></li>
-                                <li class="active"><a href="#">contact us</a></li>
-                            </ol>
-                        </div>
-                    </div>
-                </div>
 <!--contact form-->
                 <div class="section section-padding contact-main" id="contact">
                     <div class="container">
@@ -104,11 +96,13 @@
                                         <div class="contact-question form-group"><label class="control-label form-label">HOW CAN WE HELP? <span class="highlight">*</span></label><textarea id="content" name="content" class="form-control form-input"></textarea></div>
                                     </div>
                                 </div>
+                                <div class="g-recaptcha" data-sitekey="6Ld9hBYTAAAAAE0Bt9tYZURsdUYtEQLbHygKyimT"></div>
                                 <div class="contact-submit">
                                     <button type="submit" class="btn btn-contact btn-green"><span>SUBMIT</span></button>
                                 </div>
                             </form>
                         </div>
+                        <button id="submitBtn">test</button>
                     </div>
                 </div>
 <!--                map address-->

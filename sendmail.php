@@ -25,6 +25,8 @@
     </head>
     <body>
 
+
+
 <?php
 
 //mail('max.g.laboratory@gmail.com','Test','Test 123');
@@ -34,6 +36,7 @@
     $name = $_POST['name'];
     $email = $_POST['email'];
     $content = $_POST['content'];
+
     $mail = new PHPMailer;
 
 //  $mail->SMTPDebug = 3;
@@ -41,7 +44,7 @@
     $mail->Host = 'smtp.gmail.com';
     $mail->SMTPAuth = true;                               // Enable SMTP authentication
     $mail->Username = 'info.tkie@gmail.com';                 // SMTP username
-    $mail->Password = '';                           // SMTP password
+    $mail->Password = 'tkieau123';                           // SMTP password
     $mail->SMTPSecure = 'ssl';                            // Enable TLS encryption, `ssl` also accepted
     $mail->Port = 465;
 
@@ -61,7 +64,7 @@
                             <p class="footer-top-focus">Message could not be sent.</p>
                             <p class="footer-top-text">There are some tech problem, please try later, Thanks!</p></div>
                         <div class="footer-top-right">
-                            <button onclick="" class="btn btn-blue btn-bold"><a href="/"><span>Press to Return Home</span></a></button>
+                            <button onclick="window.location.href=\'http://www.tkie.com\';" class="btn btn-blue btn-bold"><a><span>Press to Return Home</span></a></button>
                         </div>
                     </div>
                 </div>
@@ -76,7 +79,7 @@
                             <p class="footer-top-focus">Congratulation! Message has been sent</p>
                             <p class="footer-top-text">We will contact you as soon as possible</p></div>
                         <div class="footer-top-right">
-                            <button onclick="" class="btn btn-blue btn-bold"><a href="/"><span>Press to Return Home</span></a></button>
+                            <button onclick="window.location.href=\'http://www.tkie.com\';" class="btn btn-blue btn-bold"><a href="index.html"><span>Press to Return Home</span></a></button>
                         </div>
                     </div>
                 </div>
