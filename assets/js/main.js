@@ -515,22 +515,38 @@
 
 })(jQuery);
 
-//post data to google doc
+//captchaText
 
-$("#submitBtn").click(function(){
-    var responseToken = document.getElementById('g-recaptcha-response').value;
+var captchaText;
+var tag;
+var captchaArray = ["mylove","helloworld","tkieworld","worldpeace","babyface"];
 
-     $.ajax({
-         url: "https://www.google.com/recaptcha/api/siteverify",
-         data: {
-           secret : '6Ld9hBYTAAAAAIIFi92Ytl2cC8lh3HqvrYwz7jE7',
-           response : responseToken},
-         success: function(result){
-                    console.log(result);
-            },
-         error: function(error){
-             console.log(error);
-         },
-     });
+$(document).ready(function() {
+    tag = Math.floor(Math.random()*4);
 
-})
+    var pre = $('#captcha');
+    var img = $('<img src="assets/images/captcha/' + tag + '.jpeg"></img>');
+
+    pre.append(img);
+
+});
+
+function removeAllSpace(str) {
+  return str.replace(/\s+/g, "");
+}
+
+function check(){
+  var str = $('#captchaCheck').val();
+  str = removeAllSpace(str).toLowerCase();
+
+  if (str == captchaArray[tag]){
+      $(".close").click();
+      $('#submitBtn').prop('disabled',false);
+  }
+  else{
+     $("#contactForm").append('<div class="alert alert-danger alert-dismissable"><button type="button" class="close" data-dismiss="alert" aria-hidden="true"> &times;</button>Input error！Plese input words in picture.</div>')
+  }
+}
+
+
+
