@@ -3504,7 +3504,7 @@ footer {
 }
 
 .bg-w-form {
-    padding-top: 100px
+/*    padding-top: 100px*/
 }
 
 .bg-w-form .form-group {
@@ -8071,4 +8071,22 @@ h5 {
     top: 5px;
     font-size: 15px;
     font-family: 'Lato', Helvetica, Arial, sans-serif;
+}
+
+.contact-title {
+	margin: 0 0 15px 0;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+/*new css*/
+.work-here-wrapper{
+    padding: 60px 0;
+    padding-left: 35%;
+}
+
+.why-choose-us-wrapper-top .background-img{
+    position: absolute;
+    width: 23%;
+    bottom: 0;
 }
