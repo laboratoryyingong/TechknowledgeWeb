@@ -841,7 +841,7 @@
 }
 
 .staff-item .staff-info .staff-name {
-    font-size: 18px;
+    font-size: 16px;
     color: #49575f;
     text-transform: uppercase;
     margin-bottom: 10px
@@ -849,13 +849,13 @@
 
 .staff-item .staff-info .staff-job {
     color: #2aacff;
-    text-transform: capitalize;
+    text-transform: none;
     margin-bottom: 25px
 }
 
 .staff-item .staff-info .staff-desctiption {
     display: none;
-    text-align: justify;
+    text-align: left;
     font-size: 13px;
     height: 72px;
     overflow: hidden;
@@ -992,7 +992,7 @@
 }
 
 .staff-item2 .staff-info .staff-name {
-    font-size: 18px;
+    font-size: 16px;
     color: #49575f;
     text-transform: uppercase;
     margin-bottom: 10px
@@ -1000,7 +1000,7 @@
 
 .staff-item2 .staff-info .staff-job {
     color: #2aacff;
-    text-transform: capitalize;
+    text-transform: none;
     margin-bottom: 25px
 }
 

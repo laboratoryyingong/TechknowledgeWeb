@@ -388,10 +388,10 @@
                     margin: 15,
                 },
                 768: {
-                    items: 3
+                    items: 5
                 },
                 1024: {
-                    items: 3
+                    items: 5
                 }
             }
         });
